@@ -200,8 +200,6 @@ python detect.py --weights yolov7.pt --conf 0.25 --img-size 640 --source inferen
 
 This dataset is downloaded from roboflow using YOLOV7 model. You can find the data [Here](https://universe.roboflow.com/monkey-detection/mm-zfbbm/dataset/2).
 
-<br/>
-
 # :book: Data Preprocessing
 
 Data pre-processing is an important step for the creation of a machine learning
@@ -216,13 +214,9 @@ accuracy of the model.
 
 ## Requirements
 
-<br/>
-
 ### System
 
 System requirements depends on complexity or size of object detection model, larger model will require more compute power and will be good at detection. I have used this in **Google Colab with Tesla T4 GPU** which is a good device. With my Nvidia Geforce 330 MX GPU based system it is not sufficient to train a YOLO model.
-
-<br/>
 
 ### Python 3
 
@@ -244,13 +238,9 @@ This implementation is tested with PyTorch gpu in Windows 11 and Linux and Googl
 
 All the dependencies and required libraries are included in the file <code>requirements.txt</code> [See here](requirements.txt)
 
-<br/>
-
 ### Install Python
 
 There are two ways to install python in windows using [Python 3 installer](https://www.python.org/downloads/) or [Anaconda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html). Installing python with anaconda or [miniconda](https://docs.conda.io/en/latest/miniconda.html) is recommended. In linux Python 3 is installed by default but we can also install miniconda or conda into linux.
-
-<br/>
 
 ### Creating Virtual Environment
 
@@ -277,8 +267,6 @@ source path/to/create/env/security_cam/bin/activate
 python -m venv path\to\create\env\security_cam
 path\to\create\env\security_cam\Scripts\activate
 ```
-
-<br/>
 
 ### Installing dependencies
 
@@ -311,7 +299,7 @@ names: ["monkey"]
 cd "yolov7-main"
 ```
 
-<br/>
+<hr/>
 
 # :bulb: How to Run
 
@@ -320,8 +308,6 @@ cd "yolov7-main"
 ```bash
 python3 train.py --epochs 128 --workers 8 --device 0 --batch-size 32 --data data.yaml --img 416 416 --cfg cfg/training/yolov7.yaml --weights '' --name Monkey-Model --hyp data/hyp.scratch.p5.yaml
 ```
-
-<br/>
 
 ### Additional guides:
 
@@ -389,7 +375,7 @@ The Input Parameters used in this project are
 └───__pycache__
 ```
 
-<br/>
+<hr/>
 
 ## References
 
@@ -409,6 +395,8 @@ The Input Parameters used in this project are
   year={2022}
 }
 ```
+
+<hr/>
 
 # :heart: Owner
 
