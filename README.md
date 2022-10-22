@@ -12,49 +12,49 @@
 # Table of Contents
 
 - [Table of Contents](#table-of-contents)
-  - [About](#about)
-  - [YOLOV7](#yolov7)
-    - [Performance](#performance)
-    - [Installation](#installation)
-    - [Testing](#testing)
-    - [Training](#training)
-    - [Transfer learning](#transfer-learning)
-    - [Inference](#inference)
+- [About](#about)
+- [YOLOV7](#yolov7)
+  - [Performance](#performance)
+  - [Installation](#installation)
+  - [Testing](#testing)
+  - [Training](#training)
+  - [Transfer learning](#transfer-learning)
+  - [Inference](#inference)
 - [:file_folder: Datasets](#file_folder-datasets)
   - [🔄 Source](#-source)
 - [:book: Data Preprocessing](#book-data-preprocessing)
-  - [Requirements](#requirements)
-    - [System](#system)
-    - [Python 3](#python-3)
-    - [Packages](#packages)
-  - [Installation](#installation-1)
-    - [:key: Prerequisites](#key-prerequisites)
-    - [Install Python](#install-python)
-    - [Creating Virtual Environment](#creating-virtual-environment)
-    - [Installing dependencies](#installing-dependencies)
+- [Requirements](#requirements)
+  - [System](#system)
+  - [Python 3](#python-3)
+  - [Packages](#packages)
+- [Installation](#installation-1)
+  - [:key: Prerequisites](#key-prerequisites)
+  - [Install Python](#install-python)
+  - [Creating Virtual Environment](#creating-virtual-environment)
+  - [Installing dependencies](#installing-dependencies)
 - [🚀&nbsp; Setup](#-setup)
 - [:bulb: How to Run](#bulb-how-to-run)
-    - [Additional guides:](#additional-guides)
-  - [Documentation](#documentation)
-    - [Input Parameters](#input-parameters)
+- [Additional guides](#additional-guides)
+- [Documentation](#documentation)
+  - [Input Parameters](#input-parameters)
 - [📂 Directory Tree](#-directory-tree)
-  - [References](#references)
+- [References](#references)
 - [:heart: Owner](#heart-owner)
 - [:eyes: License](#eyes-license)
 
 <hr/>
 
-## About
+# About
 
 Monkey Detection using Computer Vision using AI. It uses live video stream from camera feed or rtsp streaming from ip camera or cctv or input images and use object detection to detect Monkey in these feeds. This project is part of Recruitment as an Internship in IIT Bombay. In this project I used YOLOV7 model to detect Monkey in the video feed.
 
 <hr/>
 
-## YOLOV7
+# YOLOV7
 
 <div align= "center"><img src="assets/1.png" width="500" height="500"/> </div>
 
-### Performance
+## Performance
 
 MS COCO
 
@@ -70,7 +70,7 @@ MS COCO
 
 <hr/>
 
-### Installation
+## Installation
 
 Docker environment (recommended)
 
@@ -95,7 +95,7 @@ cd /yolov7
 
 <hr/>
 
-### Testing
+## Testing
 
 [`yolov7.pt`](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt) [`yolov7x.pt`](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7x.pt) [`yolov7-w6.pt`](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-w6.pt) [`yolov7-e6.pt`](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-e6.pt) [`yolov7-d6.pt`](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-d6.pt) [`yolov7-e6e.pt`](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-e6e.pt)
 
@@ -124,7 +124,7 @@ To measure accuracy, download [COCO-annotations for Pycocotools](http://images.c
 
 <br/>
 
-### Training
+## Training
 
 Data preparation
 
@@ -160,7 +160,7 @@ python -m torch.distributed.launch --nproc_per_node 8 --master_port 9527 train_a
 
 <hr/>
 
-### Transfer learning
+## Transfer learning
 
 [`yolov7_training.pt`](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7_training.pt) [`yolov7x_training.pt`](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7x_training.pt) [`yolov7-w6_training.pt`](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-w6_training.pt) [`yolov7-e6_training.pt`](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-e6_training.pt) [`yolov7-d6_training.pt`](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-d6_training.pt) [`yolov7-e6e_training.pt`](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-e6e_training.pt)
 
@@ -178,7 +178,7 @@ python train_aux.py --workers 8 --device 0 --batch-size 16 --data data/custom.ya
 
 <hr/>
 
-### Inference
+## Inference
 
 On video:
 
@@ -212,17 +212,17 @@ accuracy of the model.
 
 <br/>
 
-## Requirements
+# Requirements
 
-### System
+## System
 
 System requirements depends on complexity or size of object detection model, larger model will require more compute power and will be good at detection. I have used this in **Google Colab with Tesla T4 GPU** which is a good device. With my Nvidia Geforce 330 MX GPU based system it is not sufficient to train a YOLO model.
 
-### Python 3
+## Python 3
 
 Python 3.6 or higher. Tested with Python 3.6, 3.7, 3.8, 3.9, 3.10 in Windows 11 and Linux.
 
-### Packages
+## Packages
 
 - `Torch` >= 1.7.0
 - `numpy` >= 1.18.5
@@ -232,17 +232,17 @@ This implementation is tested with PyTorch gpu in Windows 11 and Linux and Googl
 
 <hr/>
 
-## Installation
+# Installation
 
-### :key: Prerequisites
+## :key: Prerequisites
 
 All the dependencies and required libraries are included in the file <code>requirements.txt</code> [See here](requirements.txt)
 
-### Install Python
+## Install Python
 
 There are two ways to install python in windows using [Python 3 installer](https://www.python.org/downloads/) or [Anaconda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html). Installing python with anaconda or [miniconda](https://docs.conda.io/en/latest/miniconda.html) is recommended. In linux Python 3 is installed by default but we can also install miniconda or conda into linux.
 
-### Creating Virtual Environment
+## Creating Virtual Environment
 
 Create a new python virtual environment using conda or venv and activate it. If Anaconda or Miniconda is installed use `conda` else use `venv` to create virtual environments.
 
@@ -268,7 +268,7 @@ python -m venv path\to\create\env\security_cam
 path\to\create\env\security_cam\Scripts\activate
 ```
 
-### Installing dependencies
+## Installing dependencies
 
 The command below will install all the required dependencies from `requirements.txt` file.
 
@@ -309,7 +309,9 @@ cd "yolov7-main"
 python3 train.py --epochs 128 --workers 8 --device 0 --batch-size 32 --data data.yaml --img 416 416 --cfg cfg/training/yolov7.yaml --weights '' --name Monkey-Model --hyp data/hyp.scratch.p5.yaml
 ```
 
-### Additional guides:
+<hr/>
+
+# Additional guides
 
 If get stuck in installation part follow these additional resources
 
@@ -319,9 +321,9 @@ If get stuck in installation part follow these additional resources
 
 <hr/>
 
-## Documentation
+# Documentation
 
-### Input Parameters
+## Input Parameters
 
 The Input Parameters used in this project are
 
@@ -377,7 +379,7 @@ The Input Parameters used in this project are
 
 <hr/>
 
-## References
+# References
 
 ```
 @article{wang2022yolov7,
