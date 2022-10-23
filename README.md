@@ -38,6 +38,8 @@
 - [Documentation](#documentation)
   - [Input Parameters](#input-parameters)
 - [📂 Directory Tree](#-directory-tree)
+- [:key: Results](#key-results)
+- [:clap: And it's done!](#clap-and-its-done)
 - [References](#references)
 - [:heart: Owner](#heart-owner)
 - [:eyes: License](#eyes-license)
@@ -210,13 +212,11 @@ dataset. Data pre-processing has the activities like importing datasets, splitti
 datasets, attribute scaling, etc. Preprocessing of data is required for improving the
 accuracy of the model.
 
-<br/>
-
 # Requirements
 
 ## System
 
-System requirements depends on complexity or size of object detection model, larger model will require more compute power and will be good at detection. I have used this in **Google Colab with Tesla T4 GPU** which is a good device. With my Nvidia Geforce 330 MX GPU based system it is not sufficient to train a YOLO model.
+System requirements depends on complexity or size of object detection model, larger model will require more compute power and will be good at detection. I have used this in **Google Colab with Tesla T4 GPU & Kaggle with Tesla p100 GPU** which is a good device. With my Nvidia Geforce 330 MX GPU based system it is not sufficient to train a YOLO model.
 
 ## Python 3
 
@@ -282,6 +282,8 @@ pip install -r requirements.txt
 
 Download the YOLOV7 model from [here](https://github.com/WongKinYiu/yolov7) and place it in the root directory of the project. Then copy the dataset you downloaded from Roboflow to the YOLOV7-MAIN Folder and add the data.yaml file in main directory of the project. The **data.yaml** file should contain the following information: (The dataset folder name is monkey_data)
 
+**Note:** Clone the YOLOV7 repository and do not download as a zip since .git folder is required for training.
+
 ```bash
 git clone https://github.com/WongKinYiu/yolov7.git
 ```
@@ -299,6 +301,8 @@ names: ["monkey"]
 cd "yolov7-main"
 ```
 
+2. Also copy the files from this repository to the YOLO Folder same as the structured folder in the given drive link.
+
 <hr/>
 
 # :bulb: How to Run
@@ -307,6 +311,12 @@ cd "yolov7-main"
 
 ```bash
 python3 train.py --epochs 128 --workers 8 --device 0 --batch-size 32 --data data.yaml --img 416 416 --cfg cfg/training/yolov7.yaml --weights '' --name Monkey-Model --hyp data/hyp.scratch.p5.yaml
+```
+
+2. After training is done, run the following command to test the model on a video/image:
+
+```bash
+py detect.py --weights best.pt --project results --name results --source static/img.jpg --save-txt --save-conf
 ```
 
 <hr/>
@@ -351,9 +361,6 @@ The Input Parameters used in this project are
 ├───deploy
 │   └───triton-inference-server
 │       └───data
-├───figure
-├───inference
-│   └───images
 ├───models
 │   └───__pycache__
 ├───monkey_data
@@ -366,18 +373,35 @@ The Input Parameters used in this project are
 │   └───valid
 │       ├───images
 │       └───labels
+├───runs
+│   └───train
+│       └───Monkey-Model
+│           └───weights
 ├───scripts
+├───templates
 ├───tools
-├───utils
-│   ├───aws
-│   ├───google_app_engine
-│   ├───wandb_logging
-│   │   └───__pycache__
-│   └───__pycache__
-└───__pycache__
+└───utils
+    ├───aws
+    ├───google_app_engine
+    ├───wandb_logging
+    └───__pycache__
 ```
 
-<hr/>
+---
+
+# :key: Results
+
+**Our Classification Model has successfully predicted the output with an excellent accuracy via <code>PyTorch</code>**
+
+<br/>
+
+<p align="center">
+  <img src="./assets/digit7.png" />
+</p>
+
+# :clap: And it's done!
+
+Feel free to mail me for any doubts/query :email: chagantivenkataramireddy1@gmail.com
 
 # References
 
