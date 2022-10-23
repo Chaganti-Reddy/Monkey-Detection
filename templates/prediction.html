@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+    <style>
+        .ct {
+            margin-top: 20px;
+            border: 5px solid grey;
+            border-radius: 20px;
+            height: fit-content;
+            width: fit-content;
+
+        }
+
+        .name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            height: 60px;
+            width: 1000px;
+            padding: 10px;
+            background-color: rgba(116, 64, 211, 0.774);
+            border: green solid 5px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(31, 196, 105);
+            box-shadow: 3px 3px 3px green;
+        }
+    </style>
+</head>
+
+<body bgcolor="#b696db">
+    <center>
+        <div class="ct"><img src="{{ url_for('static', filename='ans.jpg') }}"></div>        
+        <div class="name">result : {{ data }}</div>
+        <div class="name">bbox : {{ bbox }}</div>
+        <div class="name">confidence : {{ confidence }}</div>
+    </center>
+</body>
+
+</html>
