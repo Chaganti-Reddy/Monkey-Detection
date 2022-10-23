@@ -1,0 +1,4 @@
+train: monkey_data/train/images
+val: monkey_data/valid/images
+nc: 1
+names: ["monkey"]
