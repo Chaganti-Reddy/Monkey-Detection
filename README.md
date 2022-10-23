@@ -5,6 +5,11 @@
 <br/>
 
   <h4>This is an Assignment in the process of Machine Learning Internship Recruitment by IIT Bombay.</h4>
+  
+  If you want to try the Project just click the below link:
+
+[![Run on API](https://repl.it/badge/github/Ankit152/Security-Camera)](https://repl.it/github/Ankit152/Security-Camera)
+
 </div>
 
 <br/>
@@ -32,7 +37,7 @@
   - [Install Python](#install-python)
   - [Creating Virtual Environment](#creating-virtual-environment)
   - [Installing dependencies](#installing-dependencies)
-- [🚀&nbsp; Setup](#-setup)
+- [🚀&nbsp; Setup (On Production Machine)](#-setup-on-production-machine)
 - [:bulb: How to Run](#bulb-how-to-run)
 - [Additional guides](#additional-guides)
 - [Documentation](#documentation)
@@ -278,7 +283,7 @@ pip install -r requirements.txt
 
 <hr/>
 
-# 🚀&nbsp; Setup
+# 🚀&nbsp; Setup (On Production Machine)
 
 Download the YOLOV7 model from [here](https://github.com/WongKinYiu/yolov7) and place it in the root directory of the project. Then copy the dataset you downloaded from Roboflow to the YOLOV7-MAIN Folder and add the data.yaml file in main directory of the project. The **data.yaml** file should contain the following information: (The dataset folder name is monkey_data)
 
@@ -303,6 +308,12 @@ cd "yolov7-main"
 
 2. Also copy the files from this repository to the YOLO Folder same as the structured folder in the given drive link.
 
+<div align="center">
+
+[![Download on Drive](https://img.shields.io/badge/Google%20Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1fL9VM5kW1jm0_m8rXufzoNuznVLG4fQD/view?usp=sharing)
+
+</div>
+
 <hr/>
 
 # :bulb: How to Run
@@ -318,6 +329,10 @@ python3 train.py --epochs 128 --workers 8 --device 0 --batch-size 32 --data data
 ```bash
 py detect.py --weights best.pt --project results --name results --source static/img.jpg --save-txt --save-conf
 ```
+
+3. If you want to try the Project just click the below link:
+
+[![Run on API](https://repl.it/badge/github/Ankit152/Security-Camera)](https://repl.it/github/Ankit152/Security-Camera)
 
 <hr/>
 
