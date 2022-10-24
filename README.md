@@ -10,6 +10,10 @@
 
 <br/>
 
+**NOTE: Due to errors in Credit/Debit cards or errors in AWS/Google cloud platforms i was not able to deploy the application. So, I just created API & Dockerized the Application. Further Implementation of project is below. Please go through it.**
+
+<br/>
+
 # Table of Contents
 
 - [Table of Contents](#table-of-contents)
@@ -311,8 +315,14 @@ cd "yolov7-main"
 </div>
 
 3. I used "Flask" as an API to connect the model with the web application.
+
 4. Check out the flask file here [app.py](app.py)
 
+5. Then I created a Docker image using [Dockerfile](Dockerfile) and pushed it to the Docker Hub.
+
+6. We can also use [Docker-compose](docker-compose.yml) to run the application.
+
+7. Due to errors in Credit/Debit cards or errors in AWS/Google cloud platforms i was not able to deploy the application.
 <hr/>
 
 # :bulb: How to Run
@@ -409,7 +419,7 @@ The Input Parameters used in this project are
 
 # :key: Results
 
-**YOLOV7 Models gives the best accuracy and some good F1 Scores & you can see below :**
+**YOLOV7 Models gives the best accuracy and some good F1 Scores etc., & you can see below :**
 
 **F1 Score:**
 
