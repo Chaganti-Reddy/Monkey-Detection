@@ -287,7 +287,7 @@ pip install -r requirements.txt
 
 Download the YOLOV7 model from [here](https://github.com/WongKinYiu/yolov7) and place it in the root directory of the project. Then copy the dataset you downloaded from Roboflow to the YOLOV7-MAIN Folder and add the data.yaml file in main directory of the project. The **data.yaml** file should contain the following information: (The dataset folder name is monkey_data)
 
-**Note:** Clone the YOLOV7 repository and do not download as a zip since .git folder is required for training.
+**Note:** Clone the YOLOV7 repository and do not download as a zip since .git folder is required for training and create a "static" and "results" named empty folder after copying templates folder to YOLOV7.
 
 ```bash
 git clone https://github.com/WongKinYiu/yolov7.git
