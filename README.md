@@ -314,6 +314,9 @@ cd "yolov7-main"
 
 </div>
 
+3. I used "Flask" as an API to connect the model with the web application.
+4. Check out the flask file here [app.py](app.py)
+
 <hr/>
 
 # :bulb: How to Run
