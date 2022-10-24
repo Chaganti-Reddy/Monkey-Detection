@@ -5,10 +5,6 @@
 <br/>
 
   <h4>This is an Assignment in the process of Machine Learning Internship Recruitment by IIT Bombay.</h4>
-  
-  If you want to try the Project just click the below link:
-
-[![Run on API](https://repl.it/badge/github/Ankit152/Security-Camera)](https://repl.it/github/Ankit152/Security-Camera)
 
 </div>
 
@@ -333,9 +329,11 @@ python3 train.py --epochs 128 --workers 8 --device 0 --batch-size 32 --data data
 py detect.py --weights best.pt --project results --name results --source static/img.jpg --save-txt --save-conf
 ```
 
-3. If you want to try the Project just click the below link:
+1. If you want to try the Project then run the flask file app.py
 
-[![Run on API](https://repl.it/badge/github/Ankit152/Security-Camera)](https://repl.it/github/Ankit152/Security-Camera)
+```bash
+python app.py
+```
 
 <hr/>
 
@@ -391,11 +389,13 @@ The Input Parameters used in this project are
 │   └───valid
 │       ├───images
 │       └───labels
+├───results
 ├───runs
 │   └───train
 │       └───Monkey-Model
 │           └───weights
 ├───scripts
+├───static
 ├───templates
 ├───tools
 └───utils
@@ -409,13 +409,29 @@ The Input Parameters used in this project are
 
 # :key: Results
 
-**Our Classification Model has successfully predicted the output with an excellent accuracy via <code>PyTorch</code>**
+**YOLOV7 Models gives the best accuracy and some good F1 Scores & you can see below :**
+
+**F1 Score:**
+
+<img src="assets/F1_curve.png" width="500" height="300"/>
+
+**P Curve:**
+
+<img src="assets/P_curve.png" width="500" />
+
+**PR Curve:**
+
+<img src="assets/PR_curve.png" width="500" />
+
+**R Curve:**
+
+<img src="assets/R_curve.png" width="500" />
+
+**Results:**
+
+<img src="assets/results.png" width="700" height="500"/>
 
 <br/>
-
-<p align="center">
-  <img src="./assets/digit7.png" />
-</p>
 
 # :clap: And it's done!
 
