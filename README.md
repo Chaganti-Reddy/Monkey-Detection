@@ -45,7 +45,7 @@
 - [📂 Directory Tree](#-directory-tree)
 - [:key: Results](#key-results)
 - [:clap: And it's done!](#clap-and-its-done)
-- [References](#references)
+  - [:raising_hand: Citation](#raising_hand-citation)
 - [:heart: Owner](#heart-owner)
 - [:eyes: License](#eyes-license)
 
@@ -221,7 +221,7 @@ accuracy of the model.
 
 ## System
 
-System requirements depends on complexity or size of object detection model, larger model will require more compute power and will be good at detection. I have used this in **Google Colab with Tesla T4 GPU & Kaggle with Tesla p100 GPU** which is a good device. With my Nvidia Geforce 330 MX GPU based system it is not sufficient to train a YOLO model.
+System requirements depends on complexity or size of object detection model, larger model will require more compute power and will be good at detection. I have used this in **Google Colab with Tesla T4 GPU & Kaggle with Tesla p100 GPU** which is a good device. With my Nvidia Geforce 330 MX GPU based system it is not sufficient to train a YOLOV7 model.
 
 ## Python 3
 
@@ -447,24 +447,16 @@ The Input Parameters used in this project are
 
 Feel free to mail me for any doubts/query :email: chagantivenkataramireddy1@gmail.com
 
-# References
+## :raising_hand: Citation
 
-```
-@article{wang2022yolov7,
-  title={{YOLOv7}: Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors},
-  author={Wang, Chien-Yao and Bochkovskiy, Alexey and Liao, Hong-Yuan Mark},
-  journal={arXiv preprint arXiv:2207.02696},
-  year={2022}
-}
+You are allowed to cite any part of the code or our dataset. You can use it in your Research Work or Project. Remember to provide credit to the Maintainer Chaganti Reddy by mentioning a link to this repository and her GitHub Profile.
 
+Follow this format:
 
-@article{wang2022yolov7,
-  title={{security-camera}: Intelligent security camera using object detection},
-  author={Tarunbisht},
-  journal={application-of-object-detection-in-home-surveillance-system},
-  year={2022}
-}
-```
+- Author's name - Chaganti Reddy
+- Date of publication or update in parentheses.
+- Title or description of document.
+- URL.
 
 <hr/>
 
