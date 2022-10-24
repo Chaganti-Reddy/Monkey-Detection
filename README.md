@@ -297,6 +297,8 @@ Download the YOLOV7 model from [here](https://github.com/WongKinYiu/yolov7) and 
 git clone https://github.com/WongKinYiu/yolov7.git
 ```
 
+The data.yaml file should contain the following information:
+
 ```yaml
 train: monkey_data/train/images
 val: monkey_data/valid/images
@@ -382,7 +384,7 @@ The Input Parameters used in this project are
 
 ## Error Handling
 
-Mostly you are supposed to get errors regarding imwrite to a particular folder, A that time you need to create respected folders in the main directory.
+Mostly you are supposed to get errors regarding cv2.imwrite() to a particular folder, At that time you need to create respected folders in the main directory.
 
 <br/>
 
@@ -429,7 +431,7 @@ Mostly you are supposed to get errors regarding imwrite to a particular folder, 
 
 # :key: Results
 
-**YOLOV7 Models gives the best accuracy and some good F1 Scores etc., & you can see below :**
+**Our YOLOV7 Model gives the best accuracy and some good F1 Scores etc., & you can see below :**
 
 **F1 Score:**
 
@@ -483,6 +485,8 @@ Follow this format:
 - Date of publication or update in parentheses.
 - Title or description of document.
 - URL.
+
+You can find the references I used in the [references.md](References.md) file.
 
 <hr/>
 
