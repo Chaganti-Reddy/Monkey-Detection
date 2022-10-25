@@ -10,7 +10,7 @@
 ```
 
 ```
-@article{wang2022yolov7,
+@article{security-camera,
   title={{security-camera}: Intelligent security camera using object detection},
   author={Tarunbisht},
   journal={application-of-object-detection-in-home-surveillance-system},
