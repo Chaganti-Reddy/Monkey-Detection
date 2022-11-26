@@ -496,4 +496,4 @@ Made with :heart:&nbsp; by [Chaganti Reddy](https://github.com/Chaganti-Reddy/)
 
 # :eyes: License
 
-MIT © [Chaganti Reddy](https://github.com/Chaganti-Reddy/IITB-ML-Internship/blob/main/LICENSE)
+MIT © [Chaganti Reddy](https://github.com/Chaganti-Reddy/Monkey-Detection/blob/main/LICENSE)
